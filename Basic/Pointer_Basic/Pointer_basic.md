@@ -106,7 +106,38 @@
     int *p = a;
     printf("%d, %d, %d, %d", *p++, *++p, (*p)++, ++(*p));
     output : 2,2,2,2
-   
+
+12. Const to pointer
+    const int a = 10;
+    const int * p = &a;  // p holds the address of a, prints the value of a.
+    cannot modify values for both a and *p cannot be modified. But *p can be modified by pointing to another address.
+    Note:
+    1. const int a = 10;
+       int *ptr = &a;  // throws error b'caz the ptr should point to the same datatype the variable need to be pointed, so pointinf to const int variable for normal pointer eliminates const tries to make it modifiable show. need to use const for pointer also.
+
+    2. int a = 1; // can modify 
+       const int *ptr = &a; // cannot change the value directly to *p, but can modify by pointing to another address.
+       int b = 5;
+       ptr = &b; // acceptable
+
+13. pointer to constant
+    int a = 5, b =6;
+    int *const p;
+    p = &a;
+    p = &b;// address becomes constant, cannot change the address but can modify value directly.
+    p = 15; // able to modify value to the constant address.
+
+14. const pointer to const
+    int i = 5; // can be const varibale or normal variable 
+    const int *const p = &i; // cannot modify both address and value
+
+15. Types of pointer
+    1. void pointer
+    2. NULL pointer
+    3. wild Pointer
+    4. Dangling pointer
+    5. function pointer
+    
    
    
    
