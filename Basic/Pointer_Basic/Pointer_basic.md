@@ -147,8 +147,8 @@
         
     2. NULL pointer
         int * p = NULL; assinging NULL to ptr, NULL is 0, doesn't point to any memory location.
-        # should not dereference null pointer.
-        # if intialize two pointer variable with NULL, it contains 0, so both are same. if both are not initialized with NULL it is not same
+        ->should not dereference null pointer.
+        ->if intialize two pointer variable with NULL, it contains 0, so both are same. if both are not initialized with NULL it is not same
         Purpose of NULL pointer:
         -> to point memory dynamically at run time using malloc or calloc, when ptr variable should not initialize at run time.
         
