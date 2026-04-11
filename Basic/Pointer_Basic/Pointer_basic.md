@@ -99,6 +99,10 @@
     for(int i=0; i<5; i++) {
         printf("Value: %d, Address: %p\n", *p[i], p[i]); 
     }
+    int arr1[10], arr2[10];
+    int *p1[10] = {arr1, arr2};  // array of pointers
+    int (*p2)[10] = &arr1;       // pointer to array
+    int (**p3)[10] = &p2;        // pointer to pointer
 
 10. operator precedence for pointer arithmetic
     precedence occur from right to left.
