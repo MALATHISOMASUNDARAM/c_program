@@ -1,6 +1,7 @@
 #startup sequence
 when the board is powered on, after the bootloader sequence, the startup sequences starts.
 1. Vector Table fetch
+
     Cpu automatically fetches the stack pointer address and reset handler address from the vector table.
 2. Reset handler execution
     Here only the actual startu execution starts.
